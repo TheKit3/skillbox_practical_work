@@ -1,4 +1,4 @@
-def x():
-    print(2+3)
+word = "Привет"
+reversed_word = "".join(reversed(word))
 
-y = x()
+print(reversed_word)  # Выведет: "тевирП"
