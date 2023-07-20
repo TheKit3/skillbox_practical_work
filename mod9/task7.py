@@ -3,7 +3,7 @@ encrypted_word = input("Введите зашифрованное слово: ")
 original_part1 = ""  # Первая часть слова в оригинале
 reversed_part2 = ""  # Вторая часть слова в обратном порядке
 
-for symbol in range(len(encrypted_word)):  # Выводим первую часть оригинального слова
+for symbol in range(len(encrypted_word)):
     if symbol % 2 == 0:  # Все символы в нечетной последовательности 1 3 5 7 ...
         original_part1 += encrypted_word[symbol]
 
