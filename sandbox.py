@@ -1,4 +1,9 @@
-word = "Привет"
-reversed_word = "".join(reversed(word))
+input_string = "Пример строки с символами"
+half_length = len(input_string) // 2
 
-print(reversed_word)  # Выведет: "тевирП"
+new_variable = ""
+
+for i in range(half_length):
+    new_variable += input_string[i]
+
+print(new_variable)
