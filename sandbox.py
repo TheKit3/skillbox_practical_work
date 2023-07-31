@@ -1,9 +1,6 @@
-input_string = "Пример строки с символами"
-half_length = len(input_string) // 2
+N = int(input("Введите число: "))
 
-new_variable = ""
-
-for i in range(half_length):
-    new_variable += input_string[i]
-
-print(new_variable)
+for row in range(N):
+    for col in range(row, N):
+        print(col, end="")
+    print()
