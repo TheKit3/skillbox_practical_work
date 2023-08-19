@@ -7,9 +7,9 @@ for row in range()
 
     for col in range(height):
 
-        print(" " * height))
+        print(" " * height)
         print(symbol)
-        print(" " * height))
+        print(" " * height)
 
         symbol += 2
         height -= 1
