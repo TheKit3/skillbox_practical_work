@@ -2,7 +2,7 @@ start_x = int(input("Введите начало отрезка: "))  # Нача
 stop_x = int(input("Введите конец отрезка: "))  # Конец отрезка (справа)
 c = int(input("Введите шаг: "))
 
-# y == x ** 3 + 2 * x ** 2 - 4 * x + 1
+# y == deepNum ** 3 + 2 * deepNum ** 2 - 4 * deepNum + 1
 
 for dot in range(
     stop_x, start_x, c

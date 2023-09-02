@@ -1,19 +1,17 @@
-print('Задача 7. Пирамидка 2')
+n = int(input("Введите число: "))
 
-height = int(input("Ввведите высоту треугольника: "))
+for i in range(n, 0, -1):
+    # Печатаем убывающую последовательность чисел
+    for j in range(n, n - i, -1):
+        print(j, end="")
 
-start_number = 1
+    # Заполняем промежуток точками
+    for k in range(2 * i - 2):
+        print(".", end="")
 
-for row in range(1, height + 1):
+    # Печатаем возрастающую последовательность чисел
+    for l in range(n - i + 1, n + 1):
+        print(l, end="")
 
-    spaces = " " * (height - row)
-    row = spaces
-
-    for col in range(row):
-
-        print(start_number, end=" ")
-
-        start_number += 2
-        row -= 1
-
+    # Переход на новую строку для следующей итерации
     print()

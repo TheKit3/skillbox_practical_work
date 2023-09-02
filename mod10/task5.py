@@ -9,9 +9,11 @@ big_num = 0  # Наибольшее число 2
 
 for numbers in range(amount):
     number = int(input("Введите число: "))
-    remember_num = number    # сохраняем в переменную для того чтобы не потерять наше число
+    remember_num = (
+        number  # сохраняем в переменную для того чтобы не потерять наше число
+    )
 
-    while number != 0:    # считаем и отбрасываем знаки
+    while number != 0:  # считаем и отбрасываем знаки
         num_counter += number % 10
         number //= 10
 
