@@ -1,4 +1,7 @@
+!
 print('Задача 3. Аналог Steam')
+
+#import time
 
 file_size = int(input("Введите размер файла в Мб: "))
 net_speed = int(input("Введите скорость вашего соединения в Мб/с: "))
@@ -9,6 +12,7 @@ perсent = 0
 print(time)
 
 for i in range(1, time+1):
+    #time.sleep()
     perсent = int(net_speed * i / file_size * 100)
     print("Прошло", i, "секунд. Скачано", net_speed * i, "из", file_size, "Мб", "(" + str(perсent) + "%)")
 
