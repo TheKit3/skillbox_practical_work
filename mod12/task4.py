@@ -1,14 +1,19 @@
 def reverse():
     normal_number = input("Введите число: ")
 
-    reversed_number = normal_number[::-1]
-    print(int(reversed_number))
-    if normal_number.startswith("0"):
-        print("Ноль, который мы убрали, называется ведущим.")
-    reverse()
+    if normal_number == "0":
+        print("Программа завершена!")
 
+    elif int(normal_number) % 10 == 0:
+
+        reversed_number = normal_number[:-1][::-1]    # убираем последний элемент и переворачиваем последовательность
+        print(int(reversed_number))
+        print("Ноль, который мы убрали, называется ведущим.")
+        reverse()
+
+    else:
+        reversed_number = normal_number[::-1]    # переворачиваем последовательность
+        print(int(reversed_number))
+        reverse()
 
 reverse()
-
-
-# добавить выход из функции при условии одного нуля при вводе
