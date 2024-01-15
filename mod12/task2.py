@@ -9,10 +9,13 @@ def test():
     elif NumberInQuestion == 0:
         print("0")
 
+
 def positive():
     print("Положительное число.")
 
+
 def negative():
     print("Отрицательное число.")
+
 
 test()

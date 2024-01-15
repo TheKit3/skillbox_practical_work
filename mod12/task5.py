@@ -16,4 +16,5 @@ def count_letters():
     print("Количество цифр", str(digitSearcher) + ":", counter1)
     print("Количество букв", letterSearcher + ":", counter2)
 
+
 count_letters()

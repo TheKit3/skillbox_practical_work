@@ -40,4 +40,5 @@ def mainMenu():
     else:
         print("Неверный ввод.")
 
+
 mainMenu()

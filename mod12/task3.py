@@ -1,5 +1,4 @@
 def calculator():
-
     NumberInQuestion = int(input("Введите число: "))
 
     print("Действие с числом: ")
@@ -23,12 +22,14 @@ def calculator():
     print()
     calculator()
 
+
 def SumOfDigits(x):
     sum_result = 0
     while x > 0:
         sum_result += x % 10
         x //= 10
     print(sum_result)
+
 
 def maximum_figure(x):
     number_str = str(x)
@@ -38,6 +39,8 @@ def maximum_figure(x):
         if current_digit > max_digit:
             max_digit = current_digit
     print("Максимальная цифра числа равна", max_digit)
+
+
 def minimum_figure(x):
     number_str = str(x)
     min_digit = 9
@@ -47,5 +50,6 @@ def minimum_figure(x):
             min_digit = current_digit
 
     print("Минимальная цифра числа равна", min_digit)
+
 
 calculator()
